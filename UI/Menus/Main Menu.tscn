@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxwv5l55hm2mu"]
+
+[ext_resource type="Texture2D" uid="uid://cjiuheveht1om" path="res://UI/MainMenuBackground.png" id="1_nvtx5"]
+[ext_resource type="Texture2D" uid="uid://d8fvwhcsijtd" path="res://UI/MainMenuButton.png" id="2_swyg5"]
+
+[node name="Main Menu" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_nvtx5")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.75
+anchor_right = 0.6
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_swyg5")
+ignore_texture_size = true
+stretch_mode = 0
